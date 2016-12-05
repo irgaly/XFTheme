@@ -2,6 +2,15 @@
 <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 		x:Class="XFTheme.Resources.AppTheme">
+	<Style TargetType="Label">
+		<Setter Property="FontSize" Value="20"/>
+	</Style>
 	<Color x:Key="FontColor1">#ff0000</Color>
 	<Color x:Key="FontColor2">#00ff00</Color>
+	<!-- HEX指定 (Color.FromHex()) -->
+	<Color x:Key="Color1">#ff00ffff</Color>
+	<Color x:Key="Color2">#ffff00</Color>
+	<!-- Color 定義済み色指定 -->
+	<Color x:Key="Color3">Orange</Color>
+	<Color x:Key="Color4">Color.Orange</Color>
 </ResourceDictionary>
