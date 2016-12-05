@@ -9,5 +9,15 @@
 		<Label Text="Color2 Text..." TextColor="{StaticResource Color2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
 		<Label Text="Color3 Text..." TextColor="{StaticResource Color3}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
 		<Label Text="Color4 Text..." TextColor="{StaticResource Color4}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="FontAttr2 Text..." FontAttributes="{StaticResource FontAttr2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<StackLayout Margin="{StaticResource Margin1}" BackgroundColor="Blue">
+			<Label Text="in Margin1 Layout..." VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		</StackLayout>
+		<Label Text="FontSize1 FontFamily1 Text..." FontSize="{StaticResource FontSize1}" FontFamily="{StaticResource FontFamily1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="LabelStyle1 Text..." Style="{StaticResource LabelStyle1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="LabelStyle2 Text..." Style="{StaticResource LabelStyle2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="LabelStyle3 Text..." Style="{StaticResource LabelStyle3}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Button Text="AppTheme"/>
+		<Button Text="OtherTheme"/>
 	</StackLayout>
 </ContentPage>

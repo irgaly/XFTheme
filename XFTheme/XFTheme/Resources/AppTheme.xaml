@@ -5,6 +5,30 @@
 	<Style TargetType="Label">
 		<Setter Property="FontSize" Value="20"/>
 	</Style>
+
+	<Style x:Key="LabelStyle1" TargetType="Label">
+		<Setter Property="FontAttributes" Value="Bold"/>
+		<Setter Property="FontSize" Value="19"/>
+		<Setter Property="TextColor" Value="Red"/>
+	</Style>
+
+	<Style x:Key="LabelStyle2" TargetType="Label">
+		<Setter Property="FontAttributes" Value="{DynamicResource FontAttr2}"/>
+		<Setter Property="FontSize" Value="{DynamicResource FontSize1}"/>
+		<Setter Property="TextColor" Value="{DynamicResource Color3}"/>
+	</Style>
+
+	<Style x:Key="LabelStyle3" TargetType="Label" BasedOn="{StaticResource LabelStyle2}">
+		<Setter Property="FontAttributes" Value="{DynamicResource FontAttr3}"/>
+	</Style>
+
+	<Style TargetType="Button">
+		<Setter Property="BackgroundColor" Value="Blue"/>
+		<Setter Property="BorderRadius" Value="2"/>
+		<Setter Property="FontAttributes" Value="Bold"/>
+		<Setter Property="FontSize" Value="20"/>
+	</Style>
+
 	<Color x:Key="FontColor1">#ff0000</Color>
 	<Color x:Key="FontColor2">#00ff00</Color>
 	<!-- HEX指定 (Color.FromHex()) -->
@@ -13,4 +37,21 @@
 	<!-- Color 定義済み色指定 -->
 	<Color x:Key="Color3">Orange</Color>
 	<Color x:Key="Color4">Color.Orange</Color>
+
+	<FontAttributes x:Key="FontAttr1">None</FontAttributes>
+	<FontAttributes x:Key="FontAttr2">Bold</FontAttributes>
+	<FontAttributes x:Key="FontAttr3">Italic</FontAttributes>
+
+	<Thickness x:Key="Margin1">50,0,50,0</Thickness>
+	<Point x:Key="Point1">30,30</Point>
+	<Rectangle x:Key="Rect1">0,0,30,30</Rectangle>
+
+	<x:Double x:Key="FontSize1">19</x:Double>
+	<x:Int32 x:Key="Height1">20</x:Int32>
+	<x:String x:Key="Value1">Hogehoge</x:String>
+
+	<OnPlatform x:Key="FontFamily1"
+		x:TypeArguments="x:String"
+		iOS="HelveticaNeue"
+		Android="sans-serif"/>
 </ResourceDictionary>
