@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XFTheme.App">
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:theme="clr-namespace:XFTheme.Resources;assembly=XFTheme"
+		x:Class="XFTheme.App">
 	<Application.Resources>
-		<!-- Application resource dictionary -->
+		<!--
+		Application.ResourcesでMergedWithは使わない
+		See : 42264 – MergedWith doesn't work at application level - https://bugzilla.xamarin.com/show_bug.cgi?id=42264
+		-->
+		<theme:AppTheme/>
 	</Application.Resources>
 </Application>
