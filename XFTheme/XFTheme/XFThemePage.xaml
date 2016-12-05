@@ -3,21 +3,21 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 		xmlns:local="clr-namespace:XFTheme"
 		x:Class="XFTheme.XFThemePage">
-	<StackLayout>
-		<Label Text="FontColor1 Text..." TextColor="{StaticResource FontColor1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="Color1 Text..." TextColor="{StaticResource Color1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="Color2 Text..." TextColor="{StaticResource Color2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="Color3 Text..." TextColor="{StaticResource Color3}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="Color4 Text..." TextColor="{StaticResource Color4}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="FontAttr2 Text..." FontAttributes="{StaticResource FontAttr2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<StackLayout Margin="{StaticResource Margin1}" BackgroundColor="Blue">
+	<StackLayout BackgroundColor="{DynamicResource Color6}">
+		<Label Text="FontColor1 Text..." TextColor="{DynamicResource FontColor1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="Color1 Text..." TextColor="{DynamicResource Color1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="Color2 Text..." TextColor="{DynamicResource Color2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="Color3 Text..." TextColor="{DynamicResource Color3}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="Color4 Text..." TextColor="{DynamicResource Color4}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="FontAttr2 Text..." FontAttributes="{DynamicResource FontAttr2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<StackLayout Margin="{DynamicResource Margin1}" BackgroundColor="{DynamicResource Color5}">
 			<Label Text="in Margin1 Layout..." VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
 		</StackLayout>
-		<Label Text="FontSize1 FontFamily1 Text..." FontSize="{StaticResource FontSize1}" FontFamily="{StaticResource FontFamily1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="LabelStyle1 Text..." Style="{StaticResource LabelStyle1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="LabelStyle2 Text..." Style="{StaticResource LabelStyle2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Label Text="LabelStyle3 Text..." Style="{StaticResource LabelStyle3}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
-		<Button Text="AppTheme"/>
-		<Button Text="OtherTheme"/>
+		<Label Text="FontSize1 FontFamily1 Text..." FontSize="{DynamicResource FontSize1}" FontFamily="{DynamicResource FontFamily1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="LabelStyle1 Text..." Style="{DynamicResource LabelStyle1}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="LabelStyle2 Text..." Style="{DynamicResource LabelStyle2}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Label Text="LabelStyle3 Text..." Style="{DynamicResource LabelStyle3}" VerticalOptions="FillAndExpand" HorizontalOptions="Center" />
+		<Button Text="AppTheme" x:Name="AppThemeButton"/>
+		<Button Text="OtherTheme" x:Name="OtherThemeButton"/>
 	</StackLayout>
 </ContentPage>

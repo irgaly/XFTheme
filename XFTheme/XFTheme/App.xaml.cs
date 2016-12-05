@@ -1,19 +1,29 @@
 ﻿using Xamarin.Forms;
+using XFTheme.Resources;
 
 namespace XFTheme
 {
 	public partial class App : Application
 	{
+		public bool IsOtherTheme { get; private set; }
+
 		public App()
 		{
-			InitializeComponent();
+			IsOtherTheme = true;
 
-			MainPage = new XFThemePage();
+			InitializeComponent();
 		}
 
 		protected override void OnStart()
 		{
-			// Handle when your app starts
+			// App.xaml により Resources = AppTheme が設定されている状態で開始
+
+			if (IsOtherTheme)
+			{
+				Resources = new OtherTheme(); // リソース差し替え
+			}
+
+			MainPage = new XFThemePage();
 		}
 
 		protected override void OnSleep()
@@ -24,6 +34,18 @@ namespace XFTheme
 		protected override void OnResume()
 		{
 			// Handle when your app resumes
+		}
+
+		public void ApplyAppTheme() {
+			MainPage.Parent = null;
+			Resources = new AppTheme();
+			MainPage.Parent = this;
+		}
+
+		public void ApplyOtherTheme() {
+			MainPage.Parent = null;
+			Resources = new OtherTheme();
+			MainPage.Parent = this;
 		}
 	}
 }

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:theme="clr-namespace:XFTheme.Resources;assembly=XFTheme"
+  MergedWith="theme:AppTheme"
+  x:Class="XFTheme.Resources.OtherTheme">
+  <!-- AppThemeから上書きしたい項目だけ記載する -->
+  <Color x:Key="Color1">#ff00ff00</Color>
+  <Color x:Key="Color2">#ff0000</Color>
+  <Color x:Key="Color5">Orange</Color>
+  <Color x:Key="Color6">White</Color>
+  <x:Double x:Key="FontSize1">23</x:Double>
+</ResourceDictionary>
