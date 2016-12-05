@@ -39,13 +39,13 @@ namespace XFTheme
 		public void ApplyAppTheme() {
 			MainPage.Parent = null;
 			Resources = new AppTheme();
-			MainPage.Parent = this;
+			MainPage.Parent = this;  // Parent を再設定することにより View 内の DynamicResource プロパティを更新させる
 		}
 
 		public void ApplyOtherTheme() {
 			MainPage.Parent = null;
 			Resources = new OtherTheme();
-			MainPage.Parent = this;
+			MainPage.Parent = this;  // Parent を再設定することにより View 内の DynamicResource プロパティを更新させる
 		}
 	}
 }
