@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E65C7BB3-C99D-470F-A620-D315FA71D23C}</ProjectGuid>
+    <ProjectGuid>{CB3457DC-0611-43D8-A444-AFD8349247CA}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>XFTheme.Droid</RootNamespace>
@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFTheme\XFTheme.csproj">
-      <Project>{9773A08C-3115-4FFC-AEB0-05F0D0608D01}</Project>
+      <Project>{1BF17B23-ACCB-4570-A686-0F72D8577A83}</Project>
       <Name>XFTheme</Name>
     </ProjectReference>
   </ItemGroup>

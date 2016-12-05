@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{184FB8F9-BA10-44FE-9720-3D0922B52891}</ProjectGuid>
+    <ProjectGuid>{8B7EF263-6B28-4747-8139-6E13E2CA0DA9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>XFTheme.UITests</RootNamespace>
     <AssemblyName>XFTheme.UITests</AssemblyName>
@@ -29,16 +29,19 @@
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.2.0.2\lib\Xamarin.UITest.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\iOS\XFTheme.iOS.csproj">
-      <Project>{2791459A-26E7-4BC7-8708-4A024B4B65B4}</Project>
+      <Project>{56C08E65-C837-47DB-95F3-87D13482E67A}</Project>
       <Name>XFTheme.iOS</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\Droid\XFTheme.Droid.csproj">
-      <Project>{E65C7BB3-C99D-470F-A620-D315FA71D23C}</Project>
+      <Project>{CB3457DC-0611-43D8-A444-AFD8349247CA}</Project>
       <Name>XFTheme.Droid</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>

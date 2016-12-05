@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>{2791459A-26E7-4BC7-8708-4A024B4B65B4}</ProjectGuid>
+    <ProjectGuid>{56C08E65-C837-47DB-95F3-87D13482E67A}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>XFTheme.iOS</RootNamespace>
@@ -23,7 +23,7 @@
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
-    <IOSDebuggerPort>30444</IOSDebuggerPort>
+    <IOSDebuggerPort>51832</IOSDebuggerPort>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
@@ -107,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XFTheme\XFTheme.csproj">
-      <Project>{9773A08C-3115-4FFC-AEB0-05F0D0608D01}</Project>
+      <Project>{1BF17B23-ACCB-4570-A686-0F72D8577A83}</Project>
       <Name>XFTheme</Name>
     </ProjectReference>
   </ItemGroup>
